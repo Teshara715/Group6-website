@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student 1 - Theshara Ediriweera</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="logo1">
+                <img src="images/lgo1.jpg" alt="logo">
+                    <div class="text1">
+                        <h1>EcoVerse</h1>
+                        <p><em>Life flourishes where land thrives</em></p>
+                    </div>
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html" target="_self">Home</a></li>
+                <li><a href="volunteer.html" target="_self">Volunteer</a></li>
+                <li><a href="table.html" target="_self">Table</a></li>
+                <li><a href="profile.html" target="_self">Profile</a></li>
+                <li><a href="feedback.html" target="_self">Feedback</a></li>
+                <li><a href="sitemap.html" target="_self">Sitemap</a></li>
+                <li><a href="team.html" target="_self">Team</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <section class="stud">
+        <h2>Theshara Ediriweera - student 1</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Splash Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The splash screen acts as the first point of interaction for users.Some of the key HTML tags I used here are img tag <code>&lt;img&gt;</code>
+                            to displays the logo of our website.<code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> tags
+                            Provide a clear headline and mission statement. These are semantically correct for establishing page hierarchy and readability.<code>&lt;ul&gt;</code> tag with <code>&lt;li&gt;</code> tags
+                            Used to list team members in aa unordered list. for the Unordered list i used the class <code>&lt;ul class="members"> &gt;</code>/ul to style the list using css. For styling the list I used css <code>ul.members 
+                            list-style-type: circle;</code>
+                            I used <code>&lt;head&gt;</code> and <code>&lt;body&gt;</code>tags. and also I used <code>&lt;alt&gt;</code> tag for all the images for better understanding. In page editor I had to create a seamless transition to homepage after 4s. to do that I used
+                            a meta tag <code>&lt;meta http-equiv="refresh" content="4; url=home.html"&gt;</code>.</p>
+                    <h3>Accessibility</h3>
+                        <p><code>&lt;alt&gt;</code> attribute on the image allows screen readers to describe the logo to visually impaired users.Semantic HTML tags like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>,<code>&lt;ul&gt;</code> and <code>&lt;li&gt;</code> help screen readers interpret the page structure.</p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#splashVal" target="_self">Validation section for Splash page</a></p>
+                    <h3>Link to the page</h3>
+                     <p><a href="splash.html" target="_self">View Splash Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p> I used <code>&lt;select&gt;</code> with <code>&lt;option&gt;</code> for sorting volunteer programmes by popularity, 
+                            rating,cost and duration. Using a dropdown will enhances the interactivity of users with the website.<code>&lt;div class="cards"&gt;</code> and<code>&lt;section class="volunteering-cards"&gt;</code>
+                            The card based layout helps in visually grouping each volunteering opportunity. 
+                            This section  Used CSS effects such as  "transition: transform 0.3s ease;", scroll-snap-align: start;, hover effect " transform: translateY(-5px); to move the cards up upon pointing the cursor"
+                            and to make each card feel interactive. I also used buttons for volunteering cards like "learn more" and "apply" for that I used the tag  <code>&lt;button&gt;</code>
+                          <br>
+                            <code>&lt;table&gt;</code>inside cards
+                            Though tables are generally for tabular data, here it is used creatively to structure program details. 
+                            It ensures the data is neatly aligned in two columns.
+                        
+                            <code>&lt;div class="emojirating"&gt;</code>A unique feedback tool using plain <code>&lt;span&gt;</code>emoji characters. This is a lightweight and visually intuitive method for collecting emotion-based user feedback, 
+                            even without JavaScript interactivity.
+                            <code>&lt;textarea&gt;</code>for feedback Allows custom, free-form user input. Combined with emoji feedback, it balances structured and open-ended responses.</p>
+
+                    <h3>Accessibility</h3>
+                        <p> <code>&lt;label for="sort"&gt;</code>
+                            Explicitly connected to the <code>&lt;select&gt;</code> menu via for="sort" and id="sort". This ensures screen readers announce what the dropdown is for.
+                            alt attributes on all images Used to improve screen reader output.
+                            <code>&lt;small&gt;</code> for review metadata
+                            Proper semantic use for less-important info like reviewer names and dates, this helps screen readers de-prioritize extra info.
+                            And also I used a placeholder inside the review box so its easy for users to see where to enter the review.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#volunteerVal" target="_self">Validation section for Volunteer Page</a></p>
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html" target="_self">View volunteer Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>  The content page includes internal anchor links and a fixed "Go to Top" button.
+                             I created another navigation bar to move across the sections in the page and positioned with <code>position: fixed</code>. I used <code>scroll-margin-top</code> and IDs on headings for anchor navigation. 
+                             Then I used styled images with <code>border-radius</code>,<code>box-shadow</code> and a boarder colour to create a clean layout.
+                             I used a navigation bar containing navigation links to different sections of the page. Iused  the navigation bar for quick access.
+                             for that I used the tag <code>&lt;nav&gt;</code>. and used the class contentnav for style the navigation bar using css.
+                             For css styling I used " position : fixed" which fixes the navigation bar to the top of the viewport.Since there is a header for whole website I used margin-top: 70px: Positions the bar 70px from the top to prevent overlapping navigation bar with the header.
+                             I used display: flex, justify-content: center, gap: 20px, padding: 0:  to arrange the  links horizontally with equal spacing and without padding.
+
+
+
+
+
+
+
+
+                            </p>
+                    <h3>Accessibility</h3>
+                        <p>All images include <code>alt</code> attributes and all internal links are clearly labelled. Then I used <code>&lt;b&gt;</code> to bold some important facts and information so that it will be easier for the users to point important facts.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST1.html#contentVal" target="_self">Validation section for Content Page</a></p>
+                        
+                    <h3>Link to the page</h3>
+                    <p><a href="content_ST1.html" target="_self">View Content page</a></p>
+                        
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p> One of the main challenges I faced is when creating the volunteer page I had to make a horizontally scrollable card section.It took me some time to apply the correct codes and css styling to get that job done.
+                        I used the CSS "scroll-snap-type: x mandatory;" and "overflow-x: auto" to make that section.
+                        <br>
+                        And also it was a challenge to find the relevent pictures to use because there were few royalty free pictures to match our website theme.
+                    </p> 
+            </section>
+
+            <section>
+                        <h2 id="compliance"> Compliance</h2>
+                        <p>All my pages follow Janet regulations by using semantic HTML, ensuring accessibility through alt text and using proper color contrast. All resources and images were created and used under fair-use guidelines. I followed best practices in coding and validation.</p> 
+
+                    
+                    </section>
+
+                    <section>
+                        <h2 id="ref">References</h2>
+                        <ul class="ref">
+                            <li>Freepik (2025).<i>Images and icons.</i> Available at: <a href="https://www.freepik.com/" target="_blank">https://www.freepik.com/</a></li>
+                            <li>Unsplash (2025).<i>Images.</i> Available at: <a href="https://unsplash.com/" target="_blank">https://unsplash.com/</a></li>
+                            <li>W3Schools (2025).<i>HTML and CSS tutorials.</i> Available at: <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a></li>
+                            <li>byjus(2025).<i>Sustainable development information</i> Available at: <a href="https://byjus.com/" target="_blank">https://byjus.com/</a></li>
+                            <li>GVIZA<i>Wildlife Conservation Information</i> Available at: <a href="https://www.gvi.co.uk/blog/" target="_blank">https://www.gvi.co.uk/</a></li>
+                            <li>Population media center<i>Enviorenmental advocacy information</i> Available at: <a href=https://www.populationmedia.org/ target="_blank">https://www.populationmedia.org/</a></li>
+
+                        </ul>
+                        </ul>
+                    </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+
+        </main>
+        
+
+        <aside>
+                    <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+                    <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+
+                        <li>Student 1</li>
+                            <ul>
+                                <li><a href="#splash">Splash page</a></li>
+                                <li><a href="#volunteer">Volunteer page</a></li>
+                                <li><a href="#content">Content page</a></li>
+                            </ul>
+                        
+                        <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                        <li><a href="#compliance">Compliance</a></li>
+                        <li><a href="#ref">References</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </main>
+
+        
+        <footer>
+            <p>&copy; 2025 EcoVerse&nbsp; |
+                <a href="pageEditor_ST1.html" target="_self">Student 1</a> |
+                <a href="pageEditor_ST2.html" target="_self">Student 2</a> |
+                <a href="pageEditor_ST3.html" target="_self">Student 3</a> |
+                <a href="pageEditor_ST4.html" target="_self">Student 4</a> 
+            </p>
+            <p>Responsive & Accessible | Aligned with SDG 15 goals</p>
+        </footer>
+    </div>
+    
+</body>
+</html>

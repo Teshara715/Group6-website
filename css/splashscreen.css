@@ -1,0 +1,49 @@
+body.b1 {
+  margin: 0;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/andreas-gucklhorn-mawU2PoJWfU-unsplash.jpg');
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+ 
+}
+
+div.contain{
+  max-width: 800px;
+  padding: 40px;
+  background-color: rgba(12, 12, 12, 0.3);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p.mission {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+ul.members {
+  list-style-type:circle ;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+img.logo {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+}
